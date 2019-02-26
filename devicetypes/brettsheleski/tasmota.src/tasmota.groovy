@@ -219,6 +219,10 @@ def getModuleDevices(moduleId){
         case 41: // Sonoff S31
             devices[parentId + '-Power'] = [namespace : "BrettSheleski", type: "Tasmota-Power", label : "${thisLabel} Switch", options : [powerChannel : 1]];
             break;
+	    
+	case 54: // Tuya Dimmer
+            devices[parentId + '-Power'] = [namespace : "BrettSheleski", type: "Tasmota-Dimmer", label : "${thisLabel} Switch", options : [powerChannel : 1]];
+            break;
 
         case 5: // Sonoff Dual
         case 19: // Sonoff Dev
